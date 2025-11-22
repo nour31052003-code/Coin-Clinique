@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Nour Njeh">
+    <title>Fomulaire</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="icon" type="image/x-icon" href="images/medical_icon_stethoscope_icon-icons.com_66663.ico">
+</head>
+<body>
+    <header> <br><br>Bienvenue <br>Dans Le <br>Coin Clinique  
+        <br>
+        <p class="titre"><br>"L'examen clinique pas à pas"</p>
+    </header>
+    <nav class="menu">
+        <a href="index.html"> Accueil</a>
+        <a href="l’interrogatoire.html"> Interrogatoire</a>
+        <a href="Formulaire.html">Fiche de renseignement</a>
+        <a href="l’examen général.html"> Examen général</a>
+        <a href="l’examen physique.html"> Examen physique</a>
+        <a href="contact.html"> Contact</a>
+    </nav>
+<main class="form">
+<div class="form-container">
+<article><h2 class="Formulaire">Fiche de renseignement du patient</h2>
+    <br>
+    <form>
+    <fieldset> <legend>Identité du patient</legend>
+            <table>
+            <tr>
+                <td>Nom et prénom :</td>
+                <td><input type="text" name="nom_prenom"></td>
+            </tr>
+            <tr>
+                <td>Âge / Date de naissance :</td>
+                <td><input type="text" name="age"> / <input type="date" name="date_naissance"></td>
+            </tr>
+            <tr>
+                <td>Sexe :</td>
+                <td>
+                    <select name="sexe">
+                        <option value="">--Sélectionner--</option>
+                        <option value="masculin">Masculin</option>
+                        <option value="feminin">Féminin</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Adresse :</td>
+                <td><input type="text" name="adresse"></td>
+            </tr>
+            <tr>
+                <td>Téléphone :</td>
+                <td><input type="tel" name="telephone"></td>
+            </tr>
+            <tr>
+                <td>Numéro à contacter en cas d’urgence :</td>
+                <td><input type="tel" name="urgence"></td>
+            </tr>
+        </table>
+        </fieldset>
+<br>
+        <fieldset> <legend>Données socio-économiques et familiales</legend>
+            <table>
+            <tr>
+                <td>Profession :</td>
+                <td><input type="text" name="profession"></td>
+            </tr>
+            <tr>
+                <td>Niveau socio-économique :</td>
+                <td><input type="text" name="niveau_socio"></td>
+            </tr>
+            <tr>
+                <td>Niveau scolaire :</td>
+                <td><input type="text" name="niveau_scolaire"></td>
+            </tr>
+            <tr>
+                <td>Situation familiale :</td>
+                <td>
+                    <input type="radio" name="situation_familiale" value="marie"> Mariée
+                    <input type="radio" name="situation_familiale" value="celibataire"> Célibataire
+                    <input type="radio" name="situation_familiale" value="veuf"> Veuf
+                </td>
+            </tr>
+            <tr>
+                <td>Couverture sociale :</td>
+                <td>
+                    <input type="radio" name="couverture[]" value="CNAM_public"> CNAM – filière public
+                    <input type="radio" name="couverture[]" value="CNAM_remboursement"> CNAM – remboursemen
+                    <input type="radio" name="couverture[]" value="CNAM_medecin_famille"> CNAM – Médecin de famille
+                    <br>
+                    <input type="radio" name="couverture[]" value="autre"> Autre : <input type="text" name="autre_couverture">
+                </td>
+            </tr>
+</table></fieldset>
+<br>
+        <fieldset><legend>Habitudes de vie</legend>
+            <table>
+            <tr>
+                <td>Tabac :</td>
+                <td>
+                    <input type="radio" name="tabac" value="oui"> Oui 
+                    <input type="radio" name="tabac" value="non"> Non<br>
+                    Si oui, Nombre de PA : <input type="text" name="tabac_pa">
+                </td>
+            </tr>
+            <tr>
+                <td>Alcool :</td>
+                <td>
+                    <input type="radio" name="alcool" value="oui"> Oui 
+                    <input type="radio" name="alcool" value="non"> Non<br>
+                    Si oui, Type, quantité (L), fréquence : <input type="text" name="alcool_detail">
+                </td>
+            </tr>
+            <tr>
+                <td>Drogues :</td>
+                <td>
+                    <input type="radio" name="drogues" value="oui"> Oui 
+                    <input type="radio" name="drogues" value="non"> Non<br>
+                    Si oui, Nom et Voie d’administration : <input type="text" name="drogues_detail">
+                </td>
+            </tr>
+            <tr>
+                <td>Relations sexuelles à risque infectieux :</td>
+                <td>
+                    <input type="radio" name="relations_risque" value="oui"> Oui 
+                    <input type="radio" name="relations_risque" value="non"> Non
+                </td>
+            </tr>
+            <tr>
+                <td>Contact avec animaux ou élevage :</td>
+                <td>
+                    <input type="radio" name="contact_animaux" value="oui"> Oui 
+                    <input type="radio" name="contact_animaux" value="non"> Non
+                </td>
+            </tr>
+</table></fieldset>
+<br>
+<fieldset><legend>Antécédents </legend>
+    <table>
+            <tr>
+                <td>Médicaux :</td>
+                <td><textarea name="antecedents_medicaux" rows="3"></textarea></td>
+            </tr>
+            <tr>
+                <td>Chirurgicaux :</td>
+                <td><textarea name="antecedents_chirurgicaux" rows="3"></textarea></td>
+            </tr>
+            <tr>
+                <td>Familiaux :</td>
+                <td><textarea name="antecedents_familiaux" rows="3"></textarea></td>
+            </tr>
+            <tr>
+                <td>Gynéco-obstétricaux :</td>
+                <td>
+                    Gestation : <input type="text" name="gestation"><br>
+<br>
+                    Parité : <input type="text" name="parite"><br>
+<br>
+                    Enfants vivants : <input type="text" name="enfants_vivants"><br>
+<br>
+                    Avortements : <input type="radio" name="avortements" value="oui"> Oui
+                    <input type="radio" name="avortements" value="non"> Non<br>
+<br>
+                    Fausses couches : <input type="text" name="fausses_couches"><br>
+<br>
+                    DDR : <input type="text" name="ddr"><br>
+<br>
+                    Cycle menstruel régulier : <input type="radio" name="cycle_regulier" value="oui"> Oui
+                    <input type="radio" name="cycle_regulier" value="non"> Non<br>
+<br>
+                    Durée : <input type="text" name="duree_cycle"><br>
+<br>
+                    Contraception : <input type="radio" name="contraception" value="oui"> Oui
+                    <input type="radio" name="contraception" value="non"> Non<br>
+<br>
+                    Ménopause : <input type="radio" name="menopause" value="oui"> Oui
+                    <input type="radio" name="menopause" value="non"> Non
+                </td>
+            </tr>
+            <tr>
+                <td>Allergies Médicaments :</td>
+                <td><textarea name="allergies" rows="2"></textarea></td>
+            </tr>
+            <tr>
+                <td>Vaccinations :</td>
+                <td><textarea name="vaccinations" rows="2"></textarea></td>
+            </tr>
+            <tr>
+                <td>Voyages en zones d’endémie :</td>
+                <td><textarea name="voyages" rows="2" placeholder="Lieu, motif, dates"></textarea></td>
+            </tr>
+        </table>
+</fieldset>
+<br>
+<fieldset><legend>Traitements actuels</legend>
+            <table>
+            <tr>
+                <td>Médicaments de fond :</td>
+                <td><textarea name="medicaments_fond" rows="4" placeholder="Nom, dose, durée"></textarea></td>
+            </tr>
+            <tr>
+                <td>Automédication :</td>
+                <td>
+                    <input type="radio" name="automedication" value="oui"> Oui
+                    <input type="radio" name="automedication" value="non"> Non        <br>
+                    <br>
+                   Si oui, préciser : <input type="text" name="automedication_detail">
+                </td>
+            </tr>
+        </table>
+</fieldset>
+
+            <fieldset>
+            <legend>Motif de consultation</legend>
+            <table>
+            <tr>
+                <td colspan="2"><textarea name="motif_consultation" rows="3"></textarea></td>
+            </tr></table></fieldset>
+            <br>
+
+            <fieldset>
+            <legend>Histoire de la maladie actuelle (HDM)</legend>
+            <table>
+            <tr>
+                <td colspan="2"><textarea name="hdm" rows="5"></textarea></td>
+            </tr></table></fieldset>
+<br>
+        <table>
+            <tr>
+                <td colspan="2" style="text-align:center;">
+                    <input class="bouton vert" type="submit" value="Enregistrer">
+                    <br>
+                     <input  class="bouton rouge" type="reset" value="Effacer">
+                    <br>
+                    <button class="bouton bleu" onclick="window.print();">Imprimer</button>
+                </td>
+            </tr>
+        </table>
+    </form></article>
+
+</section>
+</div>
+</main>
+<footer>Copyright NOUR NJEH - Tous les droits réservées</footer>	</center> 
+</body>
+
+</html>
